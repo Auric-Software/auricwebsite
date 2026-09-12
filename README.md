@@ -12,8 +12,13 @@ The site introduces a three-engineer team, explains the restoration concept, des
 
 The contact link uses achen@auricsoftware.com and works without JavaScript. Copy, team names, and the contact link are in `index.html`; presentation is in `styles.css`.
 
-## Publish
+## Hosting and updates
 
-Upload this folder to a static website host. No build command is needed; the publishing directory is the folder containing `index.html`. Configure auricsoftware.com using the exact DNS values supplied by your chosen host. Preserve Google Workspace mail records when configuring website DNS.
+Live site: https://auric-software.github.io/auricwebsite/
+Repository: https://github.com/Auric-Software/auricwebsite
 
-Google Fonts supplies optional typography; local sans-serif fallbacks work when it is unavailable. The site has no analytics, cookies, forms, or backend. Publishing and DNS changes have not been performed.
+GitHub Pages publishes the root of `main` automatically. There is no build step; `.nojekyll` keeps the site served as static files. Commit and push changes to `main` to deploy updates.
+
+The custom domain auricsoftware.com is not connected yet. When connecting it, use the DNS values supplied by GitHub Pages and preserve Google Workspace mail records.
+
+Google Fonts supplies optional typography; local sans-serif fallbacks work when it is unavailable. The site has no analytics, cookies, forms, or backend.
