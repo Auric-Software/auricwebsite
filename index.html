@@ -3,129 +3,143 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Auric Software is interviewing restoration owners and the people who estimate, manage, and coordinate insurance jobs across estimates, documents, email, and insurer communication.">
-  <meta name="theme-color" content="#f3f1ea">
-  <meta property="og:title" content="Auric Software | Restoration workflow research">
-  <meta property="og:description" content="Three engineers interviewing restoration teams about how insurance jobs move across estimates, documents, email, and insurer conversations.">
+  <meta name="description" content="Auric Software is a software company founded by three UC San Diego engineers. We build Prism, which modernizes restoration workflows by reading a job’s estimates, reports, receipts, and photos and connecting them.">
+  <meta name="theme-color" content="#F7F6F2">
+  <meta property="og:title" content="Auric Software — Prism for restoration companies">
+  <meta property="og:description" content="Prism modernizes restoration workflows. Built by Auric Software.">
   <meta property="og:type" content="website">
-  <title>Auric Software | Restoration workflow research</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <title>Auric Software — Prism for restoration companies</title>
+  <link rel="icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header shell">
-    <a class="wordmark" href="#top" aria-label="Auric Software home">
-      <span class="logo-frame"><img src="assets/auric-logo.png" alt="Auric" width="1942" height="809"></span>
-    </a>
-    <nav aria-label="Main navigation">
-      <a href="#research">What we’re studying</a>
-      <a href="#team">The team</a>
-      <a class="contact-link" href="mailto:achen@auricsoftware.com?subject=20-minute%20restoration%20research%20call">Join a research call <span aria-hidden="true">↗</span></a>
-    </nav>
+  <header class="site-header">
+    <div class="shell header-bar">
+      <a class="brand" href="#top" aria-label="Auric Software home">
+        <img src="assets/auric-wordmark.png" alt="" width="900" height="210">
+      </a>
+      <nav aria-label="Main">
+        <a href="#product">Prism</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main id="main">
-    <section class="hero shell" id="top">
-      <div class="hero-main">
-        <p class="kicker">Research with restoration teams</p>
-        <h1>Insurance restoration jobs don’t happen in one system.</h1>
+    <section class="hero shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="label">Auric Software</p>
+        <h1 id="hero-title">Prism modernizes restoration workflows</h1>
+        <p class="lede">Auric Software is a software company founded by three software engineers from UC San Diego. Prism is our product for restoration companies.</p>
+        <a class="button" href="mailto:founders@auricsoftware.com?subject=Interested%20in%20Prism">Email the founders</a>
       </div>
-      <div class="hero-side">
-        <p class="hero-intro">We’re three software engineers interviewing restoration owners and the people who estimate, manage, and coordinate jobs across estimates, documents, email, and insurer conversations.</p>
-        <p>Help us understand where better software could support the real workflow.</p>
-        <a class="text-link" href="#contact">Join a 20-minute research call <span aria-hidden="true">→</span></a>
-      </div>
-      <div class="status-line">
-        <span class="status-label"><span class="status-dot" aria-hidden="true"></span> Current status</span>
-        <span>Interviewing restoration professionals</span>
-        <span class="status-note">No demo. No sales pitch. No preparation.</span>
-      </div>
+      <aside class="product-panel" aria-label="Prism">
+        <p class="label">Our product</p>
+        <img src="assets/prism-logo.png" alt="Prism by Auric Software" width="798" height="277">
+        <ul class="panel-list">
+          <li>Consolidate information</li>
+          <li>Easy to format</li>
+          <li>No-friction integration</li>
+        </ul>
+      </aside>
     </section>
 
-    <section class="research-section" id="research" aria-labelledby="research-title">
-      <div class="shell research-grid">
-        <div class="section-label">
-          <span>What we’re studying</span>
-        </div>
-        <div class="research-copy">
-          <h2 id="research-title">The information is there. The context is scattered.</h2>
-          <p class="lead">An insurance restoration job can move through several estimates, scope changes, supporting documents, and back-and-forth with an insurer. The full story rarely lives in one place.</p>
-          <p>We’re exploring whether software can help a team follow that story without replacing the systems they already depend on.</p>
-
-          <div class="working-question">
-            <p class="question-label">The question on our whiteboard</p>
-            <p>Could someone understand the history of a job without opening six places and asking three people?</p>
+    <section class="band" id="product" aria-labelledby="product-title">
+      <div class="shell">
+        <div class="section-intro">
+          <p class="label">What we do</p>
+          <div>
+            <h2 id="product-title">What Prism does</h2>
+            <p class="lede">When an insurer asks why an item is on your estimate, the answer is spread across reports, receipts, and photos. Prism reads every file in a job and connects them, and each connection links back to its source page.</p>
           </div>
         </div>
-        <div class="research-notes" aria-label="Workflow questions we are researching">
-          <p class="notes-heading">A few things we’re trying to understand</p>
-          <ol>
-            <li><strong>Scope changes</strong><p>How a change moves from the original estimate to revision and approval.</p></li>
-            <li><strong>Decision trail</strong><p>Where teams look when they need the document behind a decision.</p></li>
-            <li><strong>Insurer prep</strong><p>What it takes to prepare for a conversation when the job has changed.</p></li>
-          </ol>
+        <figure class="demo">
+          <picture>
+            <source media="(max-width: 720px)" srcset="assets/prism-screenshot-mobile.jpg" width="755" height="824">
+            <img src="assets/prism-screenshot.jpg" width="1400" height="864" loading="lazy" alt="Prism showing a restoration estimate with its line items. Arrows connect drying logs and reports to the items and pages they support.">
+          </picture>
+          <figcaption>An estimate in Prism, connected to the drying logs and reports that support it. Shown with demo job data.</figcaption>
+        </figure>
+        <ol class="principles">
+          <li>
+            <span class="step" aria-hidden="true">01</span>
+            <h3>Consolidate information</h3>
+            <p>All your jobs in one place. Upload a job’s estimates, reports, receipts, and photos, and Prism shows how every file connects.</p>
+          </li>
+          <li>
+            <span class="step" aria-hidden="true">02</span>
+            <h3>Easy to format</h3>
+            <p>Your files stay in your format. Prism reads PDFs, including scanned pages, and JPEG or PNG photos, and makes their contents searchable.</p>
+          </li>
+          <li>
+            <span class="step" aria-hidden="true">03</span>
+            <h3>No-friction integration</h3>
+            <p>Upload the files your team already produces. You don’t have to change how you create job documents or re-enter anything.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="band" id="team" aria-labelledby="team-title">
+      <div class="shell">
+        <div class="section-intro">
+          <p class="label">Who we are</p>
+          <div>
+            <h2 id="team-title">Three software engineers and co-founders</h2>
+            <p class="lede">All three of us graduated from UC San Diego, and we build Prism ourselves.</p>
+          </div>
         </div>
+        <ul class="team-list">
+          <li>
+            <img class="avatar" src="assets/albert-chen.jpg" alt="" width="72" height="72">
+            <div>
+              <h3>Albert Chen</h3>
+              <p>Co-founder · Software engineer</p>
+              <a class="team-link" href="https://www.linkedin.com/in/achenbode" target="_blank" rel="noopener" aria-label="Albert Chen on LinkedIn">LinkedIn</a>
+            </div>
+          </li>
+          <li>
+            <span class="avatar" aria-hidden="true">ST</span>
+            <div>
+              <h3>Stephen Tan</h3>
+              <p>Co-founder · Software engineer</p>
+              <a class="team-link" href="https://www.linkedin.com/in/stephen-tan1243" target="_blank" rel="noopener" aria-label="Stephen Tan on LinkedIn">LinkedIn</a>
+            </div>
+          </li>
+          <li>
+            <span class="avatar" aria-hidden="true">NB</span>
+            <div>
+              <h3>Navid Boloorian</h3>
+              <p>Co-founder · Software engineer</p>
+              <a class="team-link" href="https://www.linkedin.com/in/navid-boloorian" target="_blank" rel="noopener" aria-label="Navid Boloorian on LinkedIn">LinkedIn</a>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section class="team-section shell" id="team" aria-labelledby="team-title">
-      <div class="section-label">
-        <span>The team</span>
-      </div>
-      <div class="team-intro">
-        <h2 id="team-title">Three founders doing the research and building the software.</h2>
-        <p>We handle the research, design, and engineering ourselves. Earlier work studying seafood distribution taught us to understand an operational workflow before proposing a tool. We’re bringing the same hands-on approach to restoration.</p>
-      </div>
-
-      <div class="team-list" aria-label="Auric Software team members">
-        <article class="team-member">
-          <img src="assets/albert-chen.jpg" alt="Albert Chen" width="120" height="120" loading="lazy">
-          <div><h3>Albert Chen</h3><p>Co-founder · Software engineer</p></div>
-        </article>
-        <article class="team-member">
-          <span class="initials" aria-hidden="true">ST</span>
-          <div><h3>Stephen Tan</h3><p>Co-founder · Software engineer</p></div>
-        </article>
-        <article class="team-member">
-          <span class="initials" aria-hidden="true">NB</span>
-          <div><h3>Navid Boloorian</h3><p>Co-founder · Software engineer</p></div>
-        </article>
-      </div>
-      <p class="team-contact">Want to compare notes? <a href="mailto:achen@auricsoftware.com?subject=20-minute%20restoration%20research%20call">Email the team <span aria-hidden="true">↗</span></a></p>
-    </section>
-
-    <section class="principle-section shell" aria-labelledby="principle-title">
-      <div class="section-label">
-        <span>How we work</span>
-      </div>
-      <div class="principle-copy">
-        <h2 id="principle-title">We don’t want to guess from a whiteboard.</h2>
-        <p>We’d rather watch the work, ask plain questions, and make small things people can react to. Some ideas will be wrong. Finding that out early is part of the job.</p>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+    <section class="contact" id="contact" aria-labelledby="contact-title">
       <div class="shell contact-grid">
-        <p class="contact-label">A 20-minute conversation</p>
+        <p class="label">Contact</p>
         <div>
-          <h2 id="contact-title">Show us how an insurance restoration job actually gets done.</h2>
-          <p>If you own, estimate, manage, or coordinate restoration work, we’d like to hear where job information gets hard to follow. Your experience can help shape software around real workflows—not assumptions.</p>
-          <p class="contact-expectation"><strong>What to expect:</strong> a conversation about one typical job. No demo, no sales pitch, and no preparation.</p>
-          <a class="contact-button" href="mailto:achen@auricsoftware.com?subject=20-minute%20restoration%20research%20call">Email the team <span aria-hidden="true">↗</span></a>
-          <p class="contact-address">achen@auricsoftware.com</p>
+          <h2 id="contact-title">Interested in Prism? Write to the founders</h2>
+          <p class="lede">Prism hasn’t launched yet. If you work at a restoration company, email us to join the launch list or to tell us how your team handles job files today. Your email goes straight to the three of us.</p>
+          <a class="button" href="mailto:founders@auricsoftware.com?subject=Interested%20in%20Prism">founders@auricsoftware.com</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer shell">
-    <a class="wordmark" href="#top" aria-label="Auric Software home">
-      <span class="logo-frame"><img src="assets/auric-logo.png" alt="Auric" width="1942" height="809"></span>
-    </a>
-    <p>Three engineers. Currently interviewing restoration teams.</p>
-    <small>© <span id="year">2026</span> Auric Software</small>
+  <footer class="site-footer">
+    <div class="shell footer-bar">
+      <a class="brand" href="#top" aria-label="Auric Software home">
+        <img src="assets/auric-wordmark.png" alt="" width="900" height="210">
+      </a>
+      <small>© <span id="year">2026</span> Auric Software</small>
+    </div>
   </footer>
 
   <script src="site.js"></script>
