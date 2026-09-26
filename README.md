@@ -14,7 +14,7 @@ The contact address is founders@auricsoftware.com. Copy lives in `index.html`. P
 
 The product illustration is `assets/prism-hero-v3-refined.png` (1536×1024).
 Desktop and mobile display the complete image at its natural 3:2 aspect ratio.
-The caption identifies it as an illustrative product view.
+The toolbar labels it as a product preview; the caption describes the connections shown.
 
 The previous `assets/prism-screenshot.jpg` is the frame at 12.4 seconds of the Prism demo (`prism-demo-draft-09.mp4`), cropped above the demo's caption:
 
