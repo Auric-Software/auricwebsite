@@ -22,8 +22,7 @@ const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 // One continuous SVG spans the hero and product; paths follow the responsive
 // layout, so the same dots keep travelling when the hero scrolls out of view.
 const story = document.querySelector('.product-story');
-const motionToggles = [...document.querySelectorAll('.motion-toggle')];
-if (story && motionToggles.length && 'IntersectionObserver' in window) {
+if (story && 'IntersectionObserver' in window) {
   const art = story.querySelector('.story-art');
   const svg = art.querySelector('svg');
   const heroContent = story.querySelector('.hero-inner');
@@ -38,7 +37,6 @@ if (story && motionToggles.length && 'IntersectionObserver' in window) {
   });
   const bounds = story.getBoundingClientRect();
   let inView = bounds.bottom > 0 && bounds.top < window.innerHeight;
-  let pausedByUser = false;
   let animationFrame = null;
   let previousTime = null;
   let elapsed = 0;
@@ -86,12 +84,8 @@ if (story && motionToggles.length && 'IntersectionObserver' in window) {
   }
 
   function updateStoryMotion() {
-    const playing = inView && !document.hidden && !reducedMotion.matches && !pausedByUser;
+    const playing = inView && !document.hidden && !reducedMotion.matches;
     story.classList.toggle('is-art-playing', playing);
-    motionToggles.forEach(toggle => {
-      toggle.hidden = reducedMotion.matches;
-      toggle.textContent = pausedByUser ? 'Play animation' : 'Pause animation';
-    });
     if (playing && animationFrame === null) {
       previousTime = null;
       animationFrame = window.requestAnimationFrame(animate);
@@ -115,10 +109,6 @@ if (story && motionToggles.length && 'IntersectionObserver' in window) {
     updateStoryMotion();
   });
   storyObserver.observe(story);
-  motionToggles.forEach(toggle => toggle.addEventListener('click', () => {
-    pausedByUser = !pausedByUser;
-    updateStoryMotion();
-  }));
   reducedMotion.addEventListener('change', updateStoryMotion);
   document.addEventListener('visibilitychange', updateStoryMotion);
   updateStoryMotion();

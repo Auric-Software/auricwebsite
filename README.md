@@ -35,14 +35,16 @@ containers throughout. Introductions share a 1080px maximum width, centered head
 and 680px body-copy measure. Feature and team rows are capped at 1200px, with their
 individual entries left aligned for reading. Section boundaries share a combined
 64–96px gap, and the hero has less vertical padding. The product preview remains
-centered, capped at 1200px, and scales with viewport height to leave room for its
-toolbar, caption, and the sticky header. The complete image keeps its 3:2 aspect
-ratio. All graphics, fonts, and product images are local.
+centered, capped at 1440px, and scales with viewport height to leave room for its
+toolbar and the sticky header; the caption may sit below the fold on shorter screens. The complete image keeps its 3:2 aspect
+ratio. Supporting text (labels, navigation, captions, roles, and footer) uses a
+consistent 14px size on desktop and mobile; body text and primary actions use
+16px, with introductory copy scaling up to 18px. All graphics, fonts, and product
+images are local.
 `styles.css` controls responsive spacing, native smooth anchor scrolling, and
 entrance animations. The hero and product share one warm neutral canvas and a
 continuous SVG: gold curves flow behind the introduction and around the bounded
-preview, with dots travelling along them. Paths resize with the layout. Pause/play
-controls in the hero and preview caption stay synchronized. Motion stops when the
+preview, with dots travelling along them. Paths resize with the layout. Motion stops when the
 combined area leaves view, the tab is hidden, or reduced motion is requested; the
 graphic stays static without JavaScript. There is no background color break or
 section gradient. The preview has a subtle border and shadow for separation.
@@ -52,8 +54,7 @@ JavaScript disabled or IntersectionObserver unavailable. Reduced-motion settings
 disable animations and smooth scrolling, including when changed while browsing.
 
 To check presentation changes, preview at desktop and phone widths, follow the
-Prism, Team, contact, and back-to-top links, test the animation pause/play control,
-and check with reduced motion and
+Prism, Team, contact, and back-to-top links, and check with reduced motion and
 JavaScript disabled. Run `node --check site.js` for JavaScript syntax validation.
 
 ## Hosting and updates
