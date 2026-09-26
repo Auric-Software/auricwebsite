@@ -107,7 +107,7 @@ nav .nav-contact:hover { background: var(--auric-color-surface-muted); border-co
 .demo-frame { overflow: hidden; border-radius: var(--auric-radius-large); background: var(--auric-color-surface-muted); box-shadow: 0 0 0 1px var(--line), 0 24px 72px color-mix(in srgb, var(--ink) 5%, transparent); }
 .demo-toolbar { display: flex; align-items: center; justify-content: space-between; gap: var(--auric-space-5); min-height: 80px; padding: var(--auric-space-3) var(--page-inset); color: var(--muted); font-size: var(--text-small); }
 .demo-toolbar img { flex-shrink: 0; width: auto; height: 56px; }
-.demo-tag { padding: 5px 10px; border: 1px solid var(--line); border-radius: var(--auric-radius-pill); font-size: var(--text-small); }
+.demo-tag { text-align: center; padding: 5px 10px; border: 1px solid var(--line); border-radius: var(--auric-radius-pill); font-size: var(--text-small); }
 .demo picture { display: block; }
 .demo picture img { width: 100%; }
 .demo figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--auric-space-2) var(--auric-space-4); line-height: 1.5; margin-top: var(--auric-space-3); color: var(--muted); font-size: var(--text-small); }
@@ -124,7 +124,7 @@ nav .nav-contact:hover { background: var(--auric-color-surface-muted); border-co
 .team-list p { color: var(--muted); font-size: var(--text-small); }
 .team-link { display: inline-flex; align-items: center; min-height: 36px; font-size: var(--text-small); color: var(--muted); text-decoration: underline; text-decoration-color: var(--auric-color-border-strong); text-underline-offset: 4px; transition: color var(--auric-motion-fast) ease, text-decoration-color var(--auric-motion-fast) ease; }
 .team-link:hover { color: var(--ink); text-decoration-color: var(--ink); }
-.avatar { flex: 0 0 68px; width: 68px; height: 68px; border-radius: 50%; object-fit: cover; object-position: center 18%; display: grid; place-items: center; background: var(--auric-color-surface-muted); color: var(--muted); font-size: var(--text-body); font-weight: var(--auric-weight-medium); }
+.avatar { flex: 0 0 102px; width: 102px; height: 102px; border-radius: 50%; object-fit: cover; object-position: center 18%; display: grid; place-items: center; background: var(--auric-color-surface-muted); color: var(--muted); font-size: var(--text-body); font-weight: var(--auric-weight-medium); }
 
 .contact { position: relative; padding-block: calc(var(--section-space) / 2) var(--section-space); background: radial-gradient(ellipse at 50% 100%, var(--auric-color-surface-muted) 0%, color-mix(in srgb, var(--auric-color-surface-muted) 55%, transparent) 35%, transparent 72%); }
 .contact .label { margin-bottom: var(--auric-space-6); }
