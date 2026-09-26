@@ -125,6 +125,7 @@ nav .nav-contact:hover { background: var(--auric-color-surface-muted); border-co
 .team-link { display: inline-flex; align-items: center; min-height: 36px; font-size: var(--text-small); color: var(--muted); text-decoration: underline; text-decoration-color: var(--auric-color-border-strong); text-underline-offset: 4px; transition: color var(--auric-motion-fast) ease, text-decoration-color var(--auric-motion-fast) ease; }
 .team-link:hover { color: var(--ink); text-decoration-color: var(--ink); }
 .avatar { flex: 0 0 102px; width: 102px; height: 102px; border-radius: 50%; object-fit: cover; object-position: center 18%; display: grid; place-items: center; background: var(--auric-color-surface-muted); color: var(--muted); font-size: var(--text-body); font-weight: var(--auric-weight-medium); }
+.avatar--navid { background-image: url("assets/navid-boloorian.png"); background-size: 210%; background-position: 44% top; background-repeat: no-repeat; clip-path: circle(50%); }
 
 .contact { position: relative; padding-block: calc(var(--section-space) / 2) var(--section-space); background: var(--paper); }
 .contact .label { margin-bottom: var(--auric-space-6); }
