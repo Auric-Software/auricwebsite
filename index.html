@@ -10,7 +10,10 @@
   <meta property="og:type" content="website">
   <title>Auric Software — Prism for restoration companies</title>
   <link rel="icon" href="favicon.png" type="image/png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="vendor/auric-design/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="vendor/auric-design/tokens.css?v=0.2.0">
+  <link rel="stylesheet" href="vendor/auric-design/fonts.css?v=0.2.0">
+  <link rel="stylesheet" href="styles.css?v=centered-layout-2">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -18,82 +21,111 @@
   <header class="site-header">
     <div class="shell header-bar">
       <a class="brand" href="#top" aria-label="Auric Software home">
-        <img src="assets/auric-wordmark.png" alt="" width="900" height="210">
+        <img src="vendor/auric-design/auric-wordmark.png" alt="" width="900" height="210">
       </a>
       <nav aria-label="Main">
         <a href="#product">Prism</a>
         <a href="#team">Team</a>
-        <a href="#contact">Contact</a>
+        <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero shell" id="top" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="label">Auric Software</p>
-        <h1 id="hero-title">Prism modernizes restoration workflows</h1>
-        <p class="lede">Auric Software is a software company founded by three software engineers from UC San Diego. Prism is our product for restoration companies.</p>
-        <a class="button" href="mailto:founders@auricsoftware.com?subject=Interested%20in%20Prism">Email the founders</a>
+    <div class="product-story">
+      <div class="story-art" aria-hidden="true">
+        <svg viewBox="0 0 1440 2200" fill="none" preserveAspectRatio="none">
+          <g class="hero-streams">
+            <path id="hero-curve-1" class="hero-curve" d="M-120 164 C240 164 80 644 550 644 S1500 754 1390 1054 S1450 1854 500 1974 S60 2054 -120 2104" />
+            <path id="hero-curve-2" class="hero-curve" d="M-120 210 C240 210 80 690 550 690 S1500 800 1390 1100 S1450 1900 500 2020 S60 2100 -120 2150" />
+            <path id="hero-curve-3" class="hero-curve" d="M-120 256 C240 256 80 736 550 736 S1500 846 1390 1146 S1450 1946 500 2066 S60 2146 -120 2196" />
+            <g class="hero-particle" data-curve="hero-curve-1" data-phase="0.23" data-duration="42" transform="translate(550 644)">
+              <circle class="particle-halo" r="13" /><circle class="particle-core" r="4.5" />
+            </g>
+            <g class="hero-particle" data-curve="hero-curve-2" data-phase="0.5" data-duration="48" transform="translate(1390 1100)">
+              <circle class="particle-halo" r="13" /><circle class="particle-core" r="4.5" />
+            </g>
+            <g class="hero-particle" data-curve="hero-curve-3" data-phase="0.77" data-duration="54" transform="translate(500 2066)">
+              <circle class="particle-halo" r="11" /><circle class="particle-core" r="3.5" />
+            </g>
+          </g>
+        </svg>
       </div>
-      <aside class="product-panel" aria-label="Prism">
-        <p class="label">Our product</p>
-        <img src="assets/prism-logo.png" alt="Prism by Auric Software" width="798" height="277">
-        <ul class="panel-list">
-          <li>Consolidate information</li>
-          <li>Easy to format</li>
-          <li>No-friction integration</li>
-        </ul>
-      </aside>
-    </section>
-
-    <section class="band" id="product" aria-labelledby="product-title">
-      <div class="shell">
-        <div class="section-intro">
-          <p class="label">What we do</p>
-          <div>
-            <h2 id="product-title">What Prism does</h2>
-            <p class="lede">When an insurer asks why an item is on your estimate, the answer is spread across reports, receipts, and photos. Prism reads every file in a job and connects them, and each connection links back to its source page.</p>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="shell hero-inner">
+          <div class="hero-copy">
+            <h1 id="hero-title">Every file connected.<br><span>Every job clearer.</span></h1>
+            <p class="lede">A clearer way to work with your restoration job files. Prism connects your estimates, reports, receipts, and photos so you can see the whole picture.</p>
+            <div class="hero-actions">
+              <a class="button" href="mailto:founders@auricsoftware.com?subject=Interested%20in%20Prism">Get in touch <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="#product">Explore Prism <span aria-hidden="true">↓</span></a>
+            </div>
+          </div>
+          <div class="hero-footnote">
+            <p>Built for restoration teams.</p>
+            <div class="hero-footer-actions">
+              <button class="motion-toggle" type="button" hidden>Pause animation</button>
+              <a href="#product" aria-label="Discover how Prism connects your job files">A little more clarity <span aria-hidden="true">↓</span></a>
+            </div>
           </div>
         </div>
-        <figure class="demo">
-          <picture>
-            <source media="(max-width: 720px)" srcset="assets/prism-screenshot-mobile.jpg" width="755" height="824">
-            <img src="assets/prism-screenshot.jpg" width="1400" height="864" loading="lazy" alt="Prism showing a restoration estimate with its line items. Arrows connect drying logs and reports to the items and pages they support.">
-          </picture>
-          <figcaption>An estimate in Prism, connected to the drying logs and reports that support it. Shown with demo job data.</figcaption>
-        </figure>
-        <ol class="principles">
-          <li>
-            <span class="step" aria-hidden="true">01</span>
-            <h3>Consolidate information</h3>
-            <p>All your jobs in one place. Upload a job’s estimates, reports, receipts, and photos, and Prism shows how every file connects.</p>
-          </li>
-          <li>
-            <span class="step" aria-hidden="true">02</span>
-            <h3>Easy to format</h3>
-            <p>Your files stay in your format. Prism reads PDFs, including scanned pages, and JPEG or PNG photos, and makes their contents searchable.</p>
-          </li>
-          <li>
-            <span class="step" aria-hidden="true">03</span>
-            <h3>No-friction integration</h3>
-            <p>Upload the files your team already produces. You don’t have to change how you create job documents or re-enter anything.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
+      </section>
 
-    <section class="band" id="team" aria-labelledby="team-title">
-      <div class="shell">
-        <div class="section-intro">
-          <p class="label">Who we are</p>
-          <div>
-            <h2 id="team-title">Three software engineers and co-founders</h2>
-            <p class="lede">All three of us graduated from UC San Diego, and we build Prism ourselves.</p>
+      <section class="product-section" id="product" aria-labelledby="product-title">
+        <div class="shell">
+          <div class="section-intro" data-reveal>
+            <div>
+              <p class="label">01 / Introducing Prism</p>
+              <h2 id="product-title">The whole job.<br><span class="muted-heading">All the connections.</span></h2>
+            </div>
+            <p class="lede">When you need to justify an estimate item, the supporting evidence may be spread across reports, receipts, and photos. Prism brings those files together, with connections you can trace back to the source.</p>
           </div>
+          <figure class="demo" data-reveal>
+            <div class="demo-frame">
+              <div class="demo-toolbar">
+                <img src="vendor/auric-design/prism-logo.svg?v=0.2.0" alt="Prism by Auric Software" width="824" height="307">
+                <span>Your files. One connected view.</span>
+                <span class="demo-tag">Product preview</span>
+              </div>
+              <picture>
+                <img src="assets/prism-hero-v3-refined.png" width="1536" height="1024" loading="lazy" alt="Illustration of a restoration job in Prism: photos, moisture readings, receipts, and field notes connect to reports, drying logs, and estimate items. Blue arrows show direct involvement; amber arrows show inferred supporting evidence.">
+              </picture>
+            </div>
+            <figcaption><span>Job files connected to the estimate items they support.</span><span class="demo-meta"><span>Illustrative product view</span><button class="motion-toggle" type="button" hidden>Pause animation</button></span></figcaption>
+          </figure>
+          <ol class="principles">
+            <li data-reveal>
+              <span class="step" aria-hidden="true">01</span>
+              <h3>Consolidate information</h3>
+              <p>All your jobs in one place. Upload a job’s estimates, reports, receipts, and photos, and Prism shows how every file connects.</p>
+            </li>
+            <li data-reveal>
+              <span class="step" aria-hidden="true">02</span>
+              <h3>Easy to format</h3>
+              <p>Your files stay in your format. Prism reads PDFs, including scanned pages, and JPEG or PNG photos, and makes their contents searchable.</p>
+            </li>
+            <li data-reveal>
+              <span class="step" aria-hidden="true">03</span>
+              <h3>No-friction integration</h3>
+              <p>Upload the files your team already produces. You don’t have to change how you create job documents or re-enter anything.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+    </div>
+
+    <section class="team-section" id="team" aria-labelledby="team-title">
+      <div class="shell">
+        <div class="section-intro" data-reveal>
+          <div>
+            <p class="label">02 / The people behind Prism</p>
+            <h2 id="team-title">A small team.<br><span class="muted-heading">A shared focus.</span></h2>
+          </div>
+          <p class="lede">We’re Auric Software: three software engineers, co-founders, and UC San Diego graduates. We build Prism ourselves, with a focus on making restoration workflows simpler.</p>
         </div>
         <ul class="team-list">
-          <li>
+          <li data-reveal>
             <img class="avatar" src="assets/albert-chen.jpg" alt="" width="72" height="72">
             <div>
               <h3>Albert Chen</h3>
@@ -101,7 +133,7 @@
               <a class="team-link" href="https://www.linkedin.com/in/achenbode" target="_blank" rel="noopener" aria-label="Albert Chen on LinkedIn">LinkedIn</a>
             </div>
           </li>
-          <li>
+          <li data-reveal>
             <span class="avatar" aria-hidden="true">ST</span>
             <div>
               <h3>Stephen Tan</h3>
@@ -109,7 +141,7 @@
               <a class="team-link" href="https://www.linkedin.com/in/stephen-tan1243" target="_blank" rel="noopener" aria-label="Stephen Tan on LinkedIn">LinkedIn</a>
             </div>
           </li>
-          <li>
+          <li data-reveal>
             <span class="avatar" aria-hidden="true">NB</span>
             <div>
               <h3>Navid Boloorian</h3>
@@ -122,13 +154,11 @@
     </section>
 
     <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="shell contact-grid">
-        <p class="label">Contact</p>
-        <div>
-          <h2 id="contact-title">Interested in Prism? Write to the founders</h2>
-          <p class="lede">Prism hasn’t launched yet. If you work at a restoration company, email us to join the launch list or to tell us how your team handles job files today. Your email goes straight to the three of us.</p>
-          <a class="button" href="mailto:founders@auricsoftware.com?subject=Interested%20in%20Prism">founders@auricsoftware.com</a>
-        </div>
+      <div class="shell contact-inner" data-reveal>
+        <p class="label">03 / Let’s build something useful</p>
+        <h2 id="contact-title">Less searching.<br><span>More clarity.</span></h2>
+        <p class="lede">Prism hasn’t launched yet. Work in restoration? Join our launch list or tell us how your team handles job files today. You’ll be talking directly with the founders.</p>
+        <a class="contact-link" href="mailto:founders@auricsoftware.com?subject=Interested%20in%20Prism">founders@auricsoftware.com <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>
@@ -136,12 +166,13 @@
   <footer class="site-footer">
     <div class="shell footer-bar">
       <a class="brand" href="#top" aria-label="Auric Software home">
-        <img src="assets/auric-wordmark.png" alt="" width="900" height="210">
+        <img src="vendor/auric-design/auric-wordmark.png" alt="" width="900" height="210">
       </a>
+      <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
       <small>© <span id="year">2026</span> Auric Software</small>
     </div>
   </footer>
 
-  <script src="site.js"></script>
+  <script src="site.js?v=continuous-story-1"></script>
 </body>
 </html>
