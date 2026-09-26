@@ -42,7 +42,7 @@ consistent 14px size on desktop and mobile; body text and primary actions use
 16px, with introductory copy scaling up to 18px. All graphics, fonts, and product
 images are local.
 `styles.css` controls responsive spacing, native smooth anchor scrolling, and
-entrance animations. The hero and product share one warm neutral canvas and a
+entrance animations. The hero and product share one white canvas and a
 continuous SVG: gold curves flow behind the introduction and around the bounded
 preview, with dots travelling along them. Paths resize with the layout. Motion stops when the
 combined area leaves view, the tab is hidden, or reduced motion is requested; the
@@ -71,13 +71,13 @@ Inter and Outfit are self-hosted from `vendor/auric-design/fonts/`. The site has
 ## Shared visual foundations
 
 Color, font roles, spacing primitives, radii, motion, and logo assets are owned by
-the sibling `auric-design` repository. This site pins version 0.2.0 in
+the sibling `auric-design` repository. This site pins version 0.3.0 in
 `vendor/auric-design/manifest.json`. Load the generated tokens and font CSS before
 `styles.css`; edit shared values in the design repo rather than this vendor copy.
 Inter is the standard font; upright Outfit is used for accent headings. The two
 golds are reserved for brand details and readable accent text. Hero, contact,
-preview, and footer surfaces use light neutrals. The hero and product section share the canvas neutral, dark text, and readable
-gold accents. Spacing that matches the shared scale,
+preview, and footer surfaces use light neutrals. The hero and product section share a pure white canvas (#FFFFFF), dark text, and readable
+gold accents. Secondary surfaces use near-white (#FAFAFA). Contact and footer backgrounds stay pure white. Spacing that matches the shared scale,
 corner radii, and transition/entrance durations use the shared tokens; page-specific
 sizes and stagger delays remain local. The corrected Prism SVG resolves its gold
 from the same token as the brand accents and uses its native 824×307 proportions.

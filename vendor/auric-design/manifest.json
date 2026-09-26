@@ -1,10 +1,10 @@
 {
   "name": "@auric/design",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "source": "auric-design/tokens.json",
   "files": {
-    "tokens.css": "d7510555c72b2ef0c74bb9225ada90fddb30ea2653f1fe61c80dbf3f7d6ab285",
-    "fonts.css": "8ccac361721a3a1a7cf596073204c9ccb6286a7c46c26f8122ee1ff723ec15d2",
+    "tokens.css": "801cb8299176ff24a0cbbe52504d97ebf3a76c363887b817faded7c2c03bd112",
+    "fonts.css": "efab4e618f3d588a0d607e6db022c0f80e4f23284b06803027c1ca6e8ec60036",
     "prism-logo.svg": "23254506f8af8752407e5c1c042d7bf6a8b58d11a4a483e6f58614c965933a15",
     "auric-wordmark.png": "8445c13bf2ca9daea08810bc37087654f4dacce90da676413f1667f6245dff4f",
     "auric-wordmark-text.png": "22ad5c26f32b503a3d959157b58361c3a8afbc8f82ef7ad00accbb1be700ecc3",

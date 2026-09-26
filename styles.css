@@ -1,4 +1,4 @@
-/* Shared visual constants come from vendor/auric-design (v0.2.0).
+/* Shared visual constants come from vendor/auric-design (v0.3.0).
    Page composition, responsive sizes, and animation delays stay local. */
 :root {
   --ink: var(--auric-color-text);
@@ -126,12 +126,12 @@ nav .nav-contact:hover { background: var(--auric-color-surface-muted); border-co
 .team-link:hover { color: var(--ink); text-decoration-color: var(--ink); }
 .avatar { flex: 0 0 102px; width: 102px; height: 102px; border-radius: 50%; object-fit: cover; object-position: center 18%; display: grid; place-items: center; background: var(--auric-color-surface-muted); color: var(--muted); font-size: var(--text-body); font-weight: var(--auric-weight-medium); }
 
-.contact { position: relative; padding-block: calc(var(--section-space) / 2) var(--section-space); background: radial-gradient(ellipse at 50% 100%, var(--auric-color-surface-muted) 0%, color-mix(in srgb, var(--auric-color-surface-muted) 55%, transparent) 35%, transparent 72%); }
+.contact { position: relative; padding-block: calc(var(--section-space) / 2) var(--section-space); background: var(--paper); }
 .contact .label { margin-bottom: var(--auric-space-6); }
 .contact .lede { margin-top: var(--auric-space-6); }
 .contact-link { display: inline-flex; align-items: center; gap: var(--auric-space-8); margin-top: 36px; padding-bottom: 10px; border-bottom: 1px solid var(--auric-color-border-strong); font-size: clamp(1rem, 2vw, 1.5rem); letter-spacing: -0.025em; transition: border-color var(--auric-motion-fast) ease; }
 .contact-link:hover { border-color: var(--ink); }
-.site-footer { padding-block: var(--auric-space-8); background: var(--auric-color-surface-muted); }
+.site-footer { padding-block: var(--auric-space-8); border-top: 1px solid var(--line); background: var(--paper); }
 .footer-bar small, .back-to-top { font-size: var(--text-small); color: var(--muted); }
 .footer-bar .brand img { height: 25px; }
 .back-to-top { display: inline-flex; align-items: center; gap: var(--auric-space-4); min-height: 44px; }

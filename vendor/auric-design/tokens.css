@@ -1,10 +1,10 @@
-/* Auric Design 0.2.0. Generated from tokens.json; do not edit. */
+/* Auric Design 0.3.0. Generated from tokens.json; do not edit. */
 :root {
   --auric-color-gold-500: #d0ab3e;
   --auric-color-gold-700: #7d6725;
   --auric-color-neutral-0: #ffffff;
-  --auric-color-neutral-50: #f7f6f2;
-  --auric-color-neutral-100: #eeede6;
+  --auric-color-neutral-50: #fafafa;
+  --auric-color-neutral-100: #f5f5f5;
   --auric-color-neutral-200: #dedfd5;
   --auric-color-neutral-300: #b7b9aa;
   --auric-color-neutral-600: #686b61;
@@ -12,9 +12,9 @@
   --auric-color-neutral-950: #171717;
   --auric-color-brand: var(--auric-color-gold-500);
   --auric-color-accent-text: var(--auric-color-gold-700);
-  --auric-color-canvas: var(--auric-color-neutral-50);
+  --auric-color-canvas: var(--auric-color-neutral-0);
   --auric-color-surface: var(--auric-color-neutral-0);
-  --auric-color-surface-muted: var(--auric-color-neutral-100);
+  --auric-color-surface-muted: var(--auric-color-neutral-50);
   --auric-color-text: var(--auric-color-neutral-900);
   --auric-color-text-muted: var(--auric-color-neutral-600);
   --auric-color-border: var(--auric-color-neutral-200);
