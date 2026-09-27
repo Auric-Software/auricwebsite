@@ -130,6 +130,8 @@ nav .nav-contact:hover { background: var(--auric-color-surface-muted); border-co
 .contact { position: relative; padding-block: calc(var(--section-space) / 2) var(--section-space); background: var(--paper); }
 .contact .label { margin-bottom: var(--auric-space-6); }
 .contact .lede { margin-top: var(--auric-space-6); }
+.contact .lede a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--auric-color-border-strong); text-underline-offset: 4px; transition: text-decoration-color var(--auric-motion-fast) ease; }
+.contact .lede a:hover { text-decoration-color: var(--ink); }
 .contact-link { display: inline-flex; align-items: center; gap: var(--auric-space-8); margin-top: 36px; padding-bottom: 10px; border-bottom: 1px solid var(--auric-color-border-strong); font-size: clamp(1rem, 2vw, 1.5rem); letter-spacing: -0.025em; transition: border-color var(--auric-motion-fast) ease; }
 .contact-link:hover { border-color: var(--ink); }
 .site-footer { padding-block: var(--auric-space-8); border-top: 1px solid var(--line); background: var(--paper); }

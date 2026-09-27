@@ -10,6 +10,8 @@ From this directory, run `python -m http.server 8000`, then visit http://localho
 
 Auric Software is the company. Prism is the product for restoration companies. The page introduces the three co-founders — Albert Chen, Stephen Tan, and Navid Boloorian, software engineers and UC San Diego graduates — and describes Prism as modernizing restoration workflows: consolidate information, easy to format, no-friction integration.
 
+Prism website: https://prism.auricsoftware.com/
+
 The contact address is founders@auricsoftware.com. Copy lives in `index.html`. Presentation lives in `styles.css`. Product claims should match the Prism repository's product brief (`AGENTS.md`).
 
 The product illustration is `assets/prism-hero-v3-refined.png` (1536×1024).
@@ -63,6 +65,8 @@ Live site: https://auricsoftware.com/
 Repository: https://github.com/Auric-Software/auricwebsite
 
 GitHub Pages publishes the root of `main` automatically. There is no build step; `.nojekyll` keeps the site served as static files. Commit and push changes to `main` to deploy updates.
+
+GitHub Pages lets browsers cache every file for 10 minutes, and a normal reload fetches the new `index.html` while reusing cached assets. When `styles.css` or `site.js` changes, update the version on its URL in `index.html`. Give a changed image a new file name for the same reason.
 
 The custom domain auricsoftware.com is configured in GitHub Pages and `CNAME`. Preserve the domain configuration and Google Workspace mail records when updating hosting.
 
